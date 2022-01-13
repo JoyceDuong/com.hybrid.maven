@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="Nop Commerce">
+<parameter name="appUrl" value="https://demo.nopcommerce.com/" /> 
+
+<listeners>
+       <listener class-name="commons.MethodListener" />
+       <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/> 
+		<listener class-name="reportConfig.ExtentReportListenerV2"/> 
+</listeners>
+
+  <test name="Run on CHROME">
+  <parameter name="browser" value="Chrome" /> 
+    <classes>
+      <class name="com.nopcommerce.login.Level_19_Register_And_Login_Read_Json"/>
+    </classes>
+  </test>
+  
+</suite> 

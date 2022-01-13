@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="Bank-Guru">
+<parameter name="appUrl" value="https://demo.guru99.com/V4/"/> 
+
+
+  <test name="Run On Chrome">
+   <parameter name="browser" value="CHROME" /> 
+    <classes>
+      <class name="com.nopcommerce.login.Level_16_Get_Excel_Data"/>
+    </classes>
+  </test>
+</suite> 

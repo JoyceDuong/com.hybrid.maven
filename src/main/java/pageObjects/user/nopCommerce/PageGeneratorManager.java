@@ -1,0 +1,58 @@
+package pageObjects.user.nopCommerce;
+
+import org.openqa.selenium.WebDriver;
+
+public class PageGeneratorManager {
+//	private static HomePageObject homePage;
+//	private static LoginPageObject loginPage;
+//	private static RegisterPageObject registerPage;
+//	private static SearchPageObject searchPage;
+//	private static MyAccountPageObject myaccountPage;
+//	private static OrderPageObject orderPage;
+	
+	private PageGeneratorManager() {
+		
+	}
+	
+	public static HomePageObject getHomepage(WebDriver driver) {
+//		if (homePage==null) {
+//			homePage = new HomePageObject(driver);
+//		}
+		return new HomePageObject(driver);
+	}
+
+	public static RegisterPageObject getRegisterPage(WebDriver driver) {
+//		if (registerPage==null) {
+//			registerPage = new RegisterPageObject(driver);
+//		}
+		return new RegisterPageObject(driver);
+	}
+	
+	public static LoginPageObject getLoginPage(WebDriver driver) {
+//		if (loginPage==null) {
+//			loginPage= new LoginPageObject(driver);
+//		}
+		return new LoginPageObject(driver);
+	}
+	
+	public static SearchPageObject getSearchPage(WebDriver driver) {
+//		if (searchPage==null) {
+//			searchPage= new SearchPageObject(driver);
+//		}
+		return new SearchPageObject(driver);
+	}
+	
+	public static MyAccountPageObject getMyAccountPage(WebDriver driver) {
+//		if (myaccountPage==null) {
+//			myaccountPage= new MyAccountPageObject(driver);
+//		}
+		return new MyAccountPageObject(driver);
+	}
+
+	public static OrderPageObject getOrderPage(WebDriver driver) {
+//		if (orderPage==null) {
+//			orderPage= new OrderPageObject(driver);
+//		}
+		return new OrderPageObject(driver);
+	}
+}

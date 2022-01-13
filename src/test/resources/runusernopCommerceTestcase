@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="Nop Commerce">
+<parameter name="appUrl" value="https://demo.nopcommerce.com/" /> 
+
+
+
+  <test name="Run on CHROME">
+  <parameter name="browser" value="CHROME" /> 
+    <classes>
+      <class name="com.nopcommerce.login.Level_15_Register_And_Login_Object_Pattern"/>
+    </classes>
+  </test>
+  
+</suite> 
