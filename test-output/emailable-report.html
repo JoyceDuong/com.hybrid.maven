@@ -8,11 +8,38 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">9,967</td><td></td><td></td></tr>
+<tr><th colspan="7">Nop Commerce</th></tr>
+<tr><td><a href="#t0">Run on CHROME</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">39,261</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.NewTest</td><td><a href="#m0">f</a></td><td rowspan="1">1641308652654</td><td rowspan="1">3478</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Nop Commerce</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on CHROME &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.nopcommerce.login.Level_13_Register_And_Login_Log_Report</td><td><a href="#m0">Login_01_Register</a></td><td rowspan="1">1642127073439</td><td rowspan="1">6574</td></tr><tr class="passedeven"><td><a href="#m1">Login_02_Login</a></td><td rowspan="1">1642127080089</td><td rowspan="1">2285</td></tr><tr class="passedeven"><td><a href="#m2">Login_03_Switch_Page</a></td><td rowspan="1">1642127082382</td><td rowspan="1">3343</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">test.NewTest#f</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Run on CHROME</h2><h3 id="m0">com.nopcommerce.login.Level_13_Register_And_Login_Log_Report#Login_01_Register</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2022-01-14 09:24:33,490] Login_01 - Step 01 : Verify HomePage is displayed
+<br><br/>[INFO ] [2022-01-14 09:24:33,558]  -------------------------- FAILED -------------------------- 
+<br><br/>[INFO ] [2022-01-14 09:24:33,561] Login_01 - Step 02 : Click to Resiger link
+<br><br/>[INFO ] [2022-01-14 09:24:34,980] Login_01 - Step 03 : click to Gender radio button
+<br><br/>[INFO ] [2022-01-14 09:24:35,037] Login_01 - Step 04 : Enter To First Name Textbox
+<br><br/>[INFO ] [2022-01-14 09:24:35,130] Login_01 - Step 05 : Enter To Last Name Textbox
+<br><br/>[INFO ] [2022-01-14 09:24:35,211] Login_01 - Step 06 : Enter To Email Textboxtesting944@gmail.com
+<br><br/>[INFO ] [2022-01-14 09:24:35,294] Login_01 - Step 07 : Enter To Password Textbox123456
+<br><br/>[INFO ] [2022-01-14 09:24:35,373] Login_01 - Step 08 : Enter To Confirm Password Textbox
+<br><br/>[INFO ] [2022-01-14 09:24:35,451] Login_01 - Step 09 : Click To Register Button
+<br><br/>[INFO ] [2022-01-14 09:24:37,633] Login_01 - Step 10 : Verify HomePage is displayed
+<br><br/>[INFO ] [2022-01-14 09:24:37,667]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [false] but found [true]
+	at commons.BaseTest.checkFailed(BaseTest.java:120)
+	at commons.BaseTest.verifyFalse(BaseTest.java:130)
+	at com.nopcommerce.login.Level_13_Register_And_Login_Log_Report.Login_01_Register(Level_13_Register_And_Login_Log_Report.java:47)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.nopcommerce.login.Level_13_Register_And_Login_Log_Report#Login_02_Login</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2022-01-14 09:24:40,091] Login_02 - Step 01 : Click To Login Button
+<br><br/>[INFO ] [2022-01-14 09:24:40,529] Login_02 - Step 02 : Enter To Email Textbox
+<br><br/>[INFO ] [2022-01-14 09:24:40,601] Login_02 - Step 03 : Enter To Password Textbox
+<br><br/>[INFO ] [2022-01-14 09:24:40,676] Login_02 - Step 04 : Click To Login Button
+<br><br/>[INFO ] [2022-01-14 09:24:42,373]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.nopcommerce.login.Level_13_Register_And_Login_Log_Report#Login_03_Switch_Page</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2022-01-14 09:24:42,383] Login_03 - Step 01 : Switch to search Page from homepage 
+<br><br/>[INFO ] [2022-01-14 09:24:43,732] Login_03 - Step 02 : Switch to My account Page from searchpage 
+<br><br/>[INFO ] [2022-01-14 09:24:44,167] Login_03 - Step 03 : Switch to search Page from orderpage 
+<br><br/>[INFO ] [2022-01-14 09:24:45,308] Login_03 - Step 04 : Switch to Open Page from My account page 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

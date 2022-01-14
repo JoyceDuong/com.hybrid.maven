@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -19,11 +20,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 
 	private WebDriver driver;
-	protected final Log log;
+	protected final Logger log;
 	private String projectPath = System.getProperty("user.dir");
 
 	protected BaseTest() {
-		log = LogFactory.getLog(getClass());
+		log = LogManager.getLogger(getClass());
 	}
 
 	private enum BROWSER {
